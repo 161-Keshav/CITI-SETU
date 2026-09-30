@@ -1,0 +1,73 @@
+{
+  "dataset": {
+    "kind": "synthetic",
+    "banks": 3,
+    "samples_per_bank": 12000,
+    "mule_rate_train": 0.03,
+    "note": "Non-IID typology mix per bank; global balanced test set. Not a real-world benchmark."
+  },
+  "arms": {
+    "isolated": {
+      "pr_auc": {
+        "mean": 0.872,
+        "std": 0.011
+      },
+      "recall_at_1pct_fpr": {
+        "mean": 0.838,
+        "std": 0.015
+      },
+      "ring_detection_pct": {
+        "mean": 99.958,
+        "std": 0.084
+      }
+    },
+    "federated": {
+      "pr_auc": {
+        "mean": 0.915,
+        "std": 0.012
+      },
+      "recall_at_1pct_fpr": {
+        "mean": 0.885,
+        "std": 0.014
+      },
+      "ring_detection_pct": {
+        "mean": 100.0,
+        "std": 0.0
+      }
+    },
+    "centralized": {
+      "pr_auc": {
+        "mean": 0.915,
+        "std": 0.007
+      },
+      "recall_at_1pct_fpr": {
+        "mean": 0.888,
+        "std": 0.009
+      },
+      "ring_detection_pct": {
+        "mean": 100.0,
+        "std": 0.0
+      }
+    }
+  },
+  "seeds": [
+    11,
+    22,
+    33,
+    44,
+    55
+  ],
+  "latency": {
+    "scope": "single-sample MLP inference only, not end-to-end API",
+    "p50_ms": 0.109,
+    "p95_ms": 0.197,
+    "p99_ms": 0.278
+  },
+  "privacy_utility": {
+    "status": "not measured"
+  },
+  "poisoning": {
+    "status": "not measured"
+  },
+  "model_version": "fedavg-mlp-24-12-r30"
+}
