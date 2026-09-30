@@ -1,0 +1,48 @@
+{
+  "dataset": {
+    "kind": "synthetic",
+    "cases": 600,
+    "seed": 42,
+    "note": "Small deterministic smoke-evaluation; not a production fraud benchmark."
+  },
+  "arms": {
+    "isolated": {
+      "status": "not trained in lightweight demo"
+    },
+    "federated": {
+      "status": "not trained in lightweight demo"
+    },
+    "centralized": {
+      "status": "not trained in lightweight demo"
+    }
+  },
+  "xgboost_baseline": {
+    "status": "not installed in lightweight demo"
+  },
+  "privacy_utility": {
+    "status": "not measured"
+  },
+  "poisoning": {
+    "status": "not measured"
+  },
+  "latency": {
+    "p50_ms": 0.0016,
+    "p95_ms": 0.0022,
+    "p99_ms": 0.0053,
+    "throughput_context": "600 in-process score policy evaluations"
+  },
+  "per_segment_fpr": {
+    "status": "not measured"
+  },
+  "thresholds": {
+    "warn": 0.35,
+    "hold": 0.7,
+    "policy_precision": 1.0,
+    "policy_recall": 1.0
+  },
+  "model_version": "policy-demo-2026-09-30",
+  "seeds": [
+    42
+  ],
+  "generated_at": "local evaluation"
+}

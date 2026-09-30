@@ -1,0 +1,14 @@
+.venv/
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+node_modules/
+dist/
+*.tsbuildinfo
+*.egg-info/
+.env
+data/*
+!data/.gitkeep
+results/*.json
+!results/.gitkeep
+audit.jsonl
