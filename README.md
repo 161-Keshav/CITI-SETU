@@ -49,7 +49,7 @@ This is a demonstrator, not a production fraud system. Its current risk policy i
 
 ## Team and licence
 
-`{{TEAM_NAME}}` · `{{MEMBERS}}` · `{{COLLEGE}}`
+`{{La Petit Caporal}}` · `{{Gnana Keshav G}}` · `{{Anna University CEG Campus}}`
 
 Released under the [MIT License](LICENSE).
 
